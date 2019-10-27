@@ -30,4 +30,5 @@ def MongoDB():
              mycoll=mydb[S] #creating table with filename.csv
              mycoll.insert_many(my_File.to_dict(orient='records')) #inserting records into table, once they are converted into dictionary with records oriented
     print("Insertion Completed")
-MongoDB()
+if __name__ == "__main__":
+    MongoDB()
